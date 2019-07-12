@@ -1,0 +1,253 @@
+@charset "utf-8";
+
+.One7pro {
+	height: 680px;
+	width: 100%;
+	padding-bottom: 10px;
+	background: url(../img/one+7pro.jpg) no-repeat 50%;
+	background-size: cover;
+	color: white;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+
+.One7pro-Contenrt {
+	max-width: 1200px;
+	padding-top: 210px;
+	padding-left: 100px;
+	margin: 0 auto;
+}
+
+.One7pro-Contenrt h1 {
+	font-size: 34px;
+}
+
+.One7pro-Contenrt h2 {
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.One7pro-Contenrt h3 {
+	font-size: 16px;
+	font-weight: 300;
+	padding: 20px 0 50px 0;
+}
+
+.One7pro-Contenrt p {
+	font-size: 14px;
+}
+
+.Aback {
+	color: #FFFFFF;
+	display: block;
+	width: 160px;
+	text-align: center;
+	line-height: 46px;
+	border-top: 2px darkcyan solid;
+	border-bottom: 2px darkcyan solid;
+	border-left: 1px white solid;
+	border-right: 1px white solid;
+	border-radius: 2px;
+	background: url(../img/Aback.png) no-repeat;
+	background-position-x: -212px;
+}
+.Aback:hover{
+	color: #000000;
+}
+.One7pro-Contenrt .More {
+	display: block;
+	color: #FFFFFF;
+	margin: 10px 0 20px 0;
+}
+
+.One7pro-Contenrt .More:hover {
+	text-decoration: underline;
+}
+
+.One7pro.One7 .Aback {
+	border-bottom: 2px white solid;
+	border-top: 2px white solid;
+}
+
+.One7pro.One7 {
+	background: url(../img/one+7.jpg) no-repeat 50%;
+	background-size: cover;
+}
+
+/* MoreBox  */
+.MoreBox {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0 5px 10px;
+}
+
+.Morebox {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 50%;
+	padding: 0 5px 10px;
+}
+
+.Morebox a {
+	display: block;
+	height: 500px;
+}
+
+.Morebox p {
+	display: block;
+	width: 100%;
+	text-align: center;
+	color: #000000;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 36px;
+	padding-top: 30px;
+}
+
+.Morebox span {
+	display: block;
+	width: 100%;
+	text-align: center;
+	color: #000000;
+	font-size: 16px;
+	line-height: 27px;
+}
+
+.Morebox.box1 a {
+	background: url(../img/box1.jpg) no-repeat 50%;
+	background-size: cover;
+}
+
+.Morebox.box2 a {
+	background: url(../img/box2.jpg) no-repeat 50%;
+	background-size: cover;
+}
+
+.Morebox.box3 a {
+	background: url(../img/box3.jpg) no-repeat 50%;
+	background-size: cover;
+}
+
+.Morebox.box4 a {
+	background: url(../img/box4.jpg) no-repeat 50%;
+	background-size: cover;
+}
+
+/* Shot */
+.Shot {
+	width: 100%;
+	height: 434px;
+	margin-bottom: 10px;
+	background: url(../img/shotjpg.jpg) no-repeat 50%;
+	background-size: cover;
+}
+
+.Shot h1 {
+	width: 100%;
+	line-height: 57px;
+	font-size: 46px;
+	color: white;
+	text-align: center;
+	padding-top: 150px;
+	padding-bottom: 50px;
+	font-weight: 100;
+}
+
+.Shot .Aback {
+	display: block;
+	margin: 0 auto;
+	width: 126px;
+	height: 36px;
+	border: 2px white solid;
+	text-align: center;
+	line-height: 40px;
+	font-size: 14px;
+}
+
+/* BoKe New */
+.Inner {
+	padding: 68px 20px;
+	background: #f6f6f6;
+	overflow: hidden;
+}
+
+.Inner li {
+	float: left;
+	box-sizing: border-box;
+	height: 370px;
+	width: 36%;
+	padding-right: 60px;
+}
+
+.Inner .Cback {
+	display: block;
+	width: 100%;
+	height: 210.12px;
+}
+.Inner .Cback.box1 {
+	background: url(../img/boke.jpg) no-repeat 50%;
+	background-size: cover;
+}
+.Inner .Cback.box2 {
+	background: url(../img/xinwen.jpg) no-repeat 50%;
+	background-size: cover;
+}
+.Inner .Cback.box3 {
+	background: url(../img/guanwang.jpg) no-repeat 50%;
+	background-size: cover;
+}
+.Inner .Innerlast {
+	width: 28%;
+	padding-right: 0;
+}
+.Inner p{
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 5px;
+	line-height: 27px;
+}
+.Inner h3{
+	display: block;
+	font-size: 18px;
+	padding-bottom: 20px;
+}
+.Inner .CMore{
+	color: #6495ED;
+	font-size: 16px;
+}
+/* ShouHou */
+.ShouHou{
+	box-sizing: border-box;
+	width: 100%;
+	height: 196px;
+	padding: 0 20px;
+	border-top: 1px #e4e4e4 solid;
+	border-bottom: 1px #e4e4e4 solid;
+}
+.ShouHou li{
+	display: inline-block;
+	padding:35px 0;
+	height: 126px;
+	width: 25%;
+}
+.ShouHou a{
+	display: block;
+	height: 126px;
+	width: 100%;
+}
+.ShouHou i{
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-size: 50px;
+	line-height: 80px;
+}
+.ShouHou span{
+	display: block;
+	width: 100%;
+	padding-top: 15px;
+	line-height: 24px;
+	text-align: center;
+	color: #000000;
+	font-size: 14px;
+}

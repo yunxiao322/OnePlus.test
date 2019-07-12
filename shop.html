@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>商品</title>
+		<link rel="stylesheet" href="Shop/shop.css">
+		<link rel="stylesheet" href="Shop/shopxinxi.css">
+		<link rel="stylesheet" href="comm/commonality.css" type="text/css">
+	</head>
+	<body>
+		<header>
+				<ul class="Nav Logo">
+				<a href="homepage.html">
+					<li class="iconfont icon-yijia"></li>
+				</a>
+			</ul>
+			<ul class="Nav Font">
+				<a href="" class="Underline">
+					<li>OnePlus 7 Pro</li>
+				</a>
+				<a href="" class="Underline">
+					<li>OnePlus 7</li>
+				</a>
+				<a href="shop.html" class="Underline Shop" id="Shop">
+					<li>商城</li>
+				</a>
+				<a href="" class="Underline">
+					<li>品牌</li>
+				</a>
+				<a href="" class="Underline">
+					<li>服务</li>
+				</a>
+				<a href="" class="Underline">
+					<li>论坛</li>
+				</a>
+				<a href="" class="Underline">
+					<li>零售店</li>
+				</a>
+			</ul>
+			<ul class="Nav Icon">
+				<a href="Userlogin.html" class="Underline" id="Yonghu">
+					<li class="iconfont icon-yonghu"></li>
+				</a>
+				<a href="Shopcar.html" class="Underline" id="Shopcar">
+					<li class="iconfont icon-gouwuchekong"></li>
+				</a>
+				<a href="">
+					<li class="iconfont icon-sousuo"></li>
+				</a>
+			</ul>
+			<div class="HideBox" >
+				<ul class="Hide">
+					<a href="" class="FirHide">
+						<li class="iconfont icon-shouji"><span>手机</span></li>
+					</a>
+					<a href="">
+						<li class="iconfont icon-sousuo"><span>耳机</span></li>
+					</a>
+					<a href="">
+						<li class="iconfont icon-shoujike"><span>壳/膜</span></li>
+					</a>
+					<a href="">
+						<li class="iconfont icon-shuma-shujuxian"><span>适配器/数据线</span></li>
+					</a>
+					<a href="">
+						<li class="iconfont icon-shujuxian"><span>套装</span></li>
+					</a>
+					<a href="" class="LastHide">
+						<li class="iconfont icon-beibao"><span>生活馆</span></li>
+					</a>
+				</ul>
+			</div>
+			<div class="Yonghucontent">
+				<ul class="Content">
+					<a href="" class="Yonghulist">
+						<li>订单</li>
+					</a>
+					<a href="" class="Yonghulist">
+						<li>账户</li>
+					</a>
+					<a href="" class="Yonghulist">
+						<li>推荐有礼</li>
+					</a>
+					<a class="Denglu">
+						<li>登录</li>
+					</a>
+				</ul>
+			</div>
+			<div class="Shopcar">
+				<div class="Shopcarshop">
+					<span>您的购物车里没有商品!</span>
+				</div>
+				<div class="Shopcarmoney">
+					<a href="" class="Bback"><span class="bback"></span><i>去购物</i></a>
+				</div>
+			</div>
+		</header>
+		<div class="Lunbotu">
+			<span class="button left"><img src="shop/img/but.svg" alt=""></span>
+			<span class="button reight"><img src="shop/img/but.svg" alt=""></span>
+			<ul class="miaodian">
+			</ul>
+		</div>
+		<nav>
+			<div class="Navshop">
+				<ul>
+					<li>精选商品</li>
+					<li>手机</li>
+					<li>耳机</li>
+					<li>壳/膜</li>
+					<li>数据线/适配器</li>
+					<li>套装</li>
+					<li>生活馆</li>
+				</ul>
+				<p>精选商品</p><span><img src="shop/img/but.svg" alt=""></span>
+			</div>
+			<div class="Navtype">
+				<ul>
+					<li>精选商品</li>
+					<li>手机</li>
+					<li>耳机</li>
+					<li>壳/膜</li>
+					<li>数据线/适配器</li>
+					<li>套装</li>
+					<li>生活馆</li>
+				</ul>
+				<p>全部机型</p><span><img src="shop/img/but.svg" alt=""></span>
+			</div>
+			<div class="Navshunxu">
+				<ul>
+					<li>精选商品</li>
+					<li>手机</li>
+					<li>耳机</li>
+					<li>壳/膜</li>
+					<li>数据线/适配器</li>
+					<li>套装</li>
+					<li>生活馆</li>
+				</ul>
+				<p>默认排序</p><span><img src="shop/img/but.svg" alt=""></span>
+			</div>
+		</nav>
+		<section>
+
+		</section>
+		<!-- 商品详情 -->
+		<article>
+			
+			<div class="HHide">
+				
+			</div>
+		</article>
+		<div class="fangdajing">
+					
+		</div>
+		<div class="Fangdajing">
+				
+		</div>
+		<footer>
+			
+		</footer>
+	</body>
+</html>
+<script src="JQuery.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	let cook=document.cookie;
+	if(cook=="name="){
+				$(".Yonghucontent .Denglu li").text("登录")
+	}else{
+		$(".Yonghucontent .Denglu li").text("退出登录")
+	}	
+	$(".Yonghucontent .Denglu li").click(function(){
+		let cook=document.cookie;
+	if(cook=="name="){
+				$(".Yonghucontent .Denglu li").text("登录")
+	}else{
+		$(".Yonghucontent .Denglu li").text("退出登录")
+	}	
+		document.cookie='name=;expires=-1';
+	})
+		$(function() {
+				$(".Bback").mouseover(function() {
+					$(".bback").stop().animate({
+						width: "330px",
+					}, 200)
+				})
+				$(".Bback").mouseout(function() {
+					$(".bback").stop().animate({
+						width: "0px",
+					}, 200)
+				})
+			})
+		
+			function Fun(a, b) {
+				let shop = document.getElementById(a);
+				let Hidebox = document.getElementsByClassName(b)[0];
+				shop.onmouseover = function() {
+					Hidebox.style.display = "block";
+					Hidebox.style.zIndex = "9999";
+				}
+				Hidebox.onmouseover = function() {
+					Hidebox.style.display = "block";
+					Hidebox.style.zIndex = "9999";
+				}
+				Hidebox.onmouseout = function() {
+					Hidebox.style.display = "none";
+				}
+				shop.onmouseout = function() {
+					Hidebox.style.display = "none";
+				}
+			}
+			Fun("Shop", "HideBox");
+			Fun("Yonghu", "Yonghucontent");
+			Fun("Shopcar", "Shopcar");
+
+	$(function(){
+		$("footer").load("comm/commfooter.html")
+	});
+	$(".Lunbotu").css({
+		zIndex:"0"
+	})
+	$("header").css({
+		zIndex:"999"
+	})
+	$(function() {
+		$(".Eback").mouseover(function() {
+			$(".eback").stop().animate({
+				width: "310px",
+			}, 200)
+		});
+		$(".Eback").mouseout(function() {
+			$(".eback").stop().animate({
+				width: "0px",
+			}, 200)
+		});
+	});
+	// 导航栏
+	$(function(){
+		$("nav div").click(function(){
+		if("none"==$(this).find("ul").css("display")){
+			$(this).find("ul").css({
+				display:"block"
+			})
+		}else{
+			$(this).find("ul").css({
+				display:"none"
+			})
+		}
+		$(this).siblings("div").find("ul").css({
+				display:"none"
+			})
+		$(this).siblings("div").find("img").css(
+					{transform:"rotate(90deg)",
+					});
+		if($(this).siblings("div").find("img").css("transform")==$(this).find("img").css("transform")){
+		 			$(this).find("img").css({
+					transform:"rotate(-90deg)",
+					});
+		 		}else{
+		 			$(this).find("img").css({
+					transform:"rotate(90deg)",
+					});
+		 		}
+		});
+		$("nav div ul li").click(function(){
+			$(this).css({
+				background:"#F6F6F6"
+			}).siblings("li").css({
+				background:"white"
+			})
+			let str=$(this).text()
+			$(this).parent().parent().find("p").html(str)
+		});
+	})
+	// json获取轮播图
+	$("body").css({
+		margin: "0",
+		padding: "0"
+	})
+	$.ajax({
+		url: "shop/shop.json",
+		dataType: 'json', //服务器返回json格式数据
+		type: 'post', //HTTP请求类型
+		timeout: 10000, //超时时间设置为10秒；
+		contentType: "application/json;charsetset=UTF-8",
+		success: function(data) {
+			$.each(data, function(i, item) {
+				var Img = item.img;
+				var Href = item.href;
+				$(".miaodian").append(
+					"<li></li>")
+				$(".Lunbotu").append(
+					"<a href=" + Href + "><img src=" + Img + "></a>");
+			});
+			$(".miaodian li").click(function() {
+				clearInterval(time);
+				i = $(this).index();
+				$(".Lunbotu a").eq(i).fadeIn(1000).siblings(".Lunbotu a").fadeOut(1000)
+				$(".miaodian li").eq(i).css({
+					background: "red"
+				}).siblings(".miaodian li").css({
+					background: "black"
+				})
+				time;
+			});
+		},
+		error: function(xhr, type, errorThrown) {
+
+		}
+	})
+	// json获取商品
+	let XXX = 0;
+	$.ajax({
+		url: "shop/shouji.json",
+		dataType: 'json', //服务器返回json格式数据
+		type: 'post', //HTTP请求类型
+		timeout: 10000, //超时时间设置为10秒；
+		contentType: "application/json;charsetset=UTF-8",
+		success: function(data) {
+			$.each(data, function(i, item) {
+				var Id = item.id;
+				var Li = item.li;
+				$("section").append(
+					"<div></div>")
+				if ((typeof Id) == 'object') {
+					$("section div").eq(XXX).append(
+						"<ol>" + Li +
+						"</ol><span class='button left'><img src='shop/img/but.svg'></span><span class='button reight'><img src='shop/img/but.svg'></span>"
+					)
+					$.each(Id, function(i, item) {
+						var Img = item.img;
+						var Li1 = item.li1;
+						var Li2 = item.li2;
+						var H1 = item.h1;
+						var I = item.i;
+						var P = item.p;
+						if (Li1 == "" && Li2 !== "") {
+							$("section div").eq(XXX).append(
+								"<a><ul><li>" + Li2 + "</ul><img src=" + Img + "><h1>" + H1 + "</h1><p><i>&yen;" + I + "</i>&yen;" + P +
+								"</p></a>")
+						} else if (Li2 == "" && Li1 !== "") {
+							$("section div").eq(XXX).append(
+								"<a><ul><li>" + Li1 + "</ul><img src=" + Img + "><h1>" + H1 + "</h1><p><i>&yen;" + I + "</i>&yen;" + P +
+								"</p></a>")
+						} else if (Li2 == "" && Li1 == "") {
+							$("section div").eq(XXX).append(
+								"<a><img src=" + Img + "><h1>" + H1 + "</h1><p><i>&yen;" + I + "</i>&yen;" + P + "</p></a>")
+						} else {
+							$("section div").eq(XXX).append(
+								"<a><ul><li>" + Li1 + "</li><li>" + Li2 + "</ul><img src=" + Img + "><h1>" + H1 + "</h1><p><i>&yen;" +
+								I + "</i>&yen;" + P + "</p></a>")
+						}
+					});
+					XXX++;
+				} else {
+					let XXXxxx = 0;
+					var Img = item.img;
+					var Li1 = item.li1;
+					var Li2 = item.li2;
+					var H1 = item.h1;
+					var I = item.i;
+					var P = item.p;
+					if (Li1 == "" && Li2 !== "") {
+						$("section div").eq(XXX).append(
+							"<a><ul><li>" + Li2 + "</ul><img src=" + Img + "><h1>" + H1 + "</h1><p><i>&yen;" + I + "</i>&yen;" + P +
+							"</p></a>")
+					} else if (Li2 == "" && Li1 !== "") {
+						$("section div").eq(XXX).append(
+							"<a><ul><li>" + Li1 + "</ul><img src=" + Img + "><h1>" + H1 + "</h1><p><i>&yen;" + I + "</i>&yen;" + P +
+							"</p></a>")
+					} else if (Li2 == "" && Li1 == "") {
+						$("section div").eq(XXX).append(
+							"<a><img src=" + Img + "><h1>" + H1 + "</h1><p><i>&yen;" + I + "</i>&yen;" + P + "</p></a>")
+					} else {
+						$("section div").eq(XXX).append(
+							"<a><ul><li>" + Li1 + "</li><li>" + Li2 + "</ul><img src=" + Img + "><h1>" + H1 + "</h1><p><i>&yen;" + I +
+							"</i>&yen;" + P + "</p></a>")
+					}
+					XXX++;
+				}
+			});
+			let ii = 0;
+			$(".reight").click(function() {
+				ii--;
+				if (ii < 0) {
+					ii = $(this).parent().find("a").length - 1;
+					$(this).parent().find("a").eq(0).fadeOut(500)
+					$(this).parent().find("a").eq(ii).fadeIn(500)
+					$(this).parent().find("ol li").eq(ii).css({
+						background: "red"
+					}).siblings("ol li").css({
+						background: "black"
+					})
+				} else {
+					$(this).parent().find("a").eq(ii + 1).fadeOut(500)
+					$(this).parent().find("a").eq(ii).fadeIn(500)
+					$(this).parent().find("ol li").eq(ii).css({
+						background: "red"
+					}).siblings("ol li").css({
+						background: "black",
+					})
+				}
+			});
+			$(".left").click(function() {
+				ii++;
+				if (ii > $(this).parent().find("a").length - 1) {
+					ii = 0;
+					$(this).parent().find("a").eq($(this).parent().find("a").length - 1).fadeOut(500)
+					$(this).parent().find("a").eq(ii).fadeIn(500)
+					$(this).parent().find("ol li").eq(ii).css({
+						background: "red"
+					}).siblings("ol li").css({
+						background: "black"
+					})
+				} else {
+					$(this).parent().find("a").eq(ii - 1).fadeOut(500)
+					$(this).parent().find("a").eq(ii).fadeIn(500)
+					$(this).parent().find("ol li").eq(ii).css({
+						background: "red"
+					}).siblings("ol li").css({
+						background: "black",
+					})
+					
+				}
+			});
+			$("section div ol li").click(function() {
+				ii = $(this).index();
+				$(this).parent().parent().find("a").eq(ii).fadeIn(1000).siblings("a").fadeOut(1000)
+				$(this).css({
+					background: "red"
+				}).siblings("ol li").css({
+					background: "black"
+				})
+			});
+			<!--------------------------------------------------------------------- 商品详情 -->
+				$(function(){
+				$("section div").click(function(){
+					$(".Lunbotu").css({
+						display:"none"
+					})
+					$("article").css({
+						display:"block"
+					})
+					$("nav,section").css({
+						display:"none"
+					})
+					let Index=$(this).index();
+					$.ajax({
+						url:"shop/shouji.json",
+						dataType:'json',//服务器返回json格式数据
+						type:'post',//HTTP请求类型
+						timeout:10000,//超时时间设置为10秒；
+						success:function(data){
+							$.each(data,function(i,item){
+								if(i==Index){
+									let Id=item.id;
+									if((typeof Id)=="object"){
+										let II=0;
+										let Name=item.name;
+										let Money=item.money;
+										$("article").append(
+										"<div class='Xiangqing'><h1>"+Name+"</h1><div class='shoujitype'><i>颜色/机型</i></div><p>"+Money+"</p><a class='Fback'><span class='fback'></span><i>加入购物车</i></a>"
+										)
+										$.each(Id,function(i,item){
+											let Liimg1=item.liimg1;
+											let Liimg2=item.liimg2;
+											let Liimg3=item.liimg3;
+											let Liimg4=item.liimg4;
+											let Color=item.color;
+										$("article .HHide").append(
+										"<div class='TUpian'></div>"
+										)
+										if(Liimg2==""){
+											$("article .HHide .TUpian").eq(II).append(
+												"<ol><li><img src="+Liimg1+"></li></ol><ul><li><img src="+Liimg1+"></li></ul>"
+												)
+										}if(Liimg3==""){
+											$("article .HHide .TUpian").eq(II).append(
+												"<ol><li><img src="+Liimg1+"></li><li><img src="+Liimg2+"></li></ol><ul><li><img src="+Liimg1+"></li><li><img src="+Liimg2+"></li></ul>"
+												)
+										}if(Liimg4==""){
+											$("article .HHide .TUpian").eq(II).append(
+												"<ol><li><img src="+Liimg1+"></li><li><img src="+Liimg2+"></li><li><img src="+Liimg3+"></li></ol><ul><li><img src="+Liimg1+"></li><li><img src="+Liimg2+"></li><li><img src="+Liimg3+"></li></ul>"
+												)
+										}else{
+											$("article .HHide .TUpian").eq(II).append(
+											"<ol><li><img src="+Liimg1+"></li><li><img src="+Liimg2+"></li><li><img src="+Liimg3+"></li><li><img src="+Liimg4+"></li></ol><ul><li><img src="+Liimg1+"></li><li><img src="+Liimg2+"></li><li><img src="+Liimg3+"></li><li><img src="+Liimg4+"></li></ul>"
+											)
+										}
+										
+										$("article .Xiangqing .shoujitype").append(
+											"<span>"+Color+"</span>"
+											)
+											II++;
+										})
+									}else{
+										let II=0;
+										let Name=item.name;
+										let Money=item.money;
+										let Liimg1=item.liimg1;
+										let Liimg2=item.liimg2;
+										let Liimg3=item.liimg3;
+										let Liimg4=item.liimg4;
+										let Color=item.color;
+										$("article").append(
+										"<div class='Xiangqing'><h1>"+Name+"</h1><div class='shoujitype'><i>颜色/机型</i></div><p>"+Money+"</p><a class='Fback'><span class='fback'></span><i>加入购物车</i></a>"
+										)
+										$("article .HHide").append(
+										"<div class='TUpian'></div>"
+										)
+										if(Liimg2==""){
+											$("article .HHide .TUpian").eq(II).append(
+												"<ol><li><img src="+Liimg1+"></li></ol><ul><li><img src="+Liimg1+"></li></ul>"
+												)
+										}if(Liimg3==""){
+											$("article .HHide .TUpian").eq(II).append(
+												"<ol><li><img src="+Liimg1+"></li><li><img src="+Liimg2+"></li></ol><ul><li><img src="+Liimg1+"></li><li><img src="+Liimg2+"></li></ul>"
+												)
+										}if(Liimg4==""){
+											$("article .HHide .TUpian").eq(II).append(
+												"<ol><li><img src="+Liimg1+"></li><li><img src="+Liimg2+"></li><li><img src="+Liimg3+"></li></ol><ul><li><img src="+Liimg1+"></li><li><img src="+Liimg2+"></li><li><img src="+Liimg3+"></li></ul>"
+												)
+										}else{
+											$("article .HHide .TUpian").eq(II).append(
+											"<ol><li><img src="+Liimg1+"></li><li><img src="+Liimg2+"></li><li><img src="+Liimg3+"></li><li><img src="+Liimg4+"></li></ol><ul><li><img src="+Liimg1+"></li><li><img src="+Liimg2+"></li><li><img src="+Liimg3+"></li><li><img src="+Liimg4+"></li></ul>"
+											)
+										}
+										
+										$("article .Xiangqing .shoujitype").append(
+											"<span>"+Color+"</span>"
+											)
+									}
+								}
+							})
+							//--------------点击颜色更换放大镜图片
+								$("article .HHide .TUpian ul li").click(function(){
+									$(this).css({
+										background:"white"
+									}).siblings("article .HHide .TUpian ul li").css({
+										background:"#F6F6F6"})
+									$(this).parent().parent().find("ol").find("li").eq($(this).index()).fadeIn(100).siblings("article .HHide .TUpian ol li").fadeOut(100)
+									})
+								$("article .Xiangqing .shoujitype span").click(function(){
+									$(this).css({
+										border:"2px red solid"
+									}).siblings("article .Xiangqing .shoujitype span").css({
+										border:"none"});
+									$("article .HHide .TUpian").eq($(this).index()-1).css({
+										display:"block"
+									}).siblings("article .HHide .TUpian").css({
+										display:"none"});
+								})
+								$(function(){
+									$(".Fback").mouseover(function() {
+										$(".fback").stop().animate({
+											width: "100%",
+										}, 200)
+									});
+									$(".Fback").mouseout(function() {
+										$(".fback").stop().animate({
+											width: "0px",
+										}, 200)
+									});
+								})
+	//--------------------------------------------------------------------------点击加入购物车
+								$(".Fback").click(function(){
+									let mysqlname=cook.split("name=");
+									let tupian=$(this).parent().parent().find(".HHide").find(".TUpian").eq(0).find("ol").eq(0).find("li").eq(0).find("img").attr("src");
+									let mingzi=$(this).parent().find("h1").text()
+									let danjia=$(this).parent().find("p").text()
+									console.log(mysqlname[1])
+										$.ajax({
+											url:"Shop/SShop.php",
+											data:{
+										// "img":$(this).parent().parent().find(".HHide").find(".TUpian").eq(0).find("ol").eq(0).find("li").eq(0).find("img").attr("src"),
+										// "id":$(this).parent().find("h1").text(),
+										// "money":$(this).parent().find("p").find("h3").text(),
+										// "mysqlname":mysqlname[1],
+										"mysqlname":mysqlname[1],
+										"img":tupian,
+										"id":mingzi,
+										"money":danjia,
+										"num":"1",
+											},
+											// dataType:'json',//服务器返回json格式数据
+											type:'post',//HTTP请求类型
+											timeout:10000,//超时时间设置为10秒；
+											success:function(data){
+												alert("添加商品成功")
+											},
+											error:function(xhr,type,errorThrown){
+												
+											}
+										});
+								})
+	//----------------------------------------------------------------------------放大镜
+								$("article .HHide .TUpian ul li img").click(function(){
+									$(".Fangdajing").css({
+										background:"url("+$(this).attr("src")+") no-repeat",
+										backgroundSize: "500%"
+									})
+								})
+								$("article .HHide .TUpian ol li img,.fangdajing").mouseover(function(){
+									$(".Fangdajing,.fangdajing").css({
+										display:"block"
+									})
+								});
+								$("article .HHide .TUpian ol li img,.fangdajing").mousemove(function(e){
+										let Eve=e||event;
+									let minX=$("article .HHide .TUpian ol li img").offset().left;
+									let minY=$("article .HHide .TUpian ol li img").offset().top;
+									if($(".fangdajing").offset().left<60){
+										$(".fangdajing").css({
+										left:60+"px",
+										top:Eve.pageY-47.5+"px"
+									})
+									}else if($(".fangdajing").offset().left>500){
+										$(".fangdajing").css({
+											left:500+"px",
+											top:Eve.pageY-47.5+"px"
+										})
+									}else if($(".fangdajing").offset().top>410){
+										$(".fangdajing").css({
+											left:Eve.pageX-47.5+"px",
+											top:410+"px"
+										})
+									}else if($(".fangdajing").offset().top<158){
+										$(".fangdajing").css({
+											left:Eve.pageX-47.5+"px",
+											top:158+"px"
+										})
+									}else{
+										$(".fangdajing").css({
+											left:Eve.pageX-47.5+"px",
+											top:Eve.pageY-47.5+"px"
+										})
+									}
+									let X=$(".fangdajing").offset().left-98;
+									let Y=$(".fangdajing").offset().top-120;
+									$(".Fangdajing").css({
+										backgroundPositionX:"-"+5*X+"px",
+										backgroundPositionY:"-"+5*Y+"px"
+									})
+								});
+								$("article .HHide .TUpian ol li img,.fangdajing").mouseout(function(){
+									$(".Fangdajing,.fangdajing").css({
+										display:"none"
+									})
+								})
+						},
+						error:function(xhr,type,errorThrown){
+							console.log("失败")
+						},
+						
+					});
+				});
+			});
+		},
+		error: function(xhr, type, errorThrown) {
+
+		}
+	})
+</script>
+<script src="chajian/lunbotu.js" type="text/javascript" charset="utf-8"></script>

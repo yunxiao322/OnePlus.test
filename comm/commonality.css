@@ -1,0 +1,310 @@
+@charset "utf-8";
+@import url("../homepage/iconfont.css");
+*{
+	margin:0;
+	padding:0;
+	}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 60px;
+	padding: 0 20px;
+	min-width: 940px;
+	position: relative;
+}
+.iconfont{
+	font-size: 22px;
+	color: #404040;
+}
+.iconfont.icon-yijia{
+	font-size: 35px;
+	color: red;
+}
+.Nav{
+	height: 64px;
+}
+.Nav li{
+	float: left;
+	height: 58px;
+	line-height: 60px;
+	text-align: center;
+	padding: 0 20px;
+	color: #000000;
+}
+.Nav.Font{
+	font-size: 14px;
+}
+.Nav a{
+	display: inline-block;
+	height: 60px;
+}
+.Underline :hover {	
+	height: 60px;
+	border-bottom:2px red solid;
+}
+.HideBox{
+	height: 140px;
+	width: 100%;
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 60px;
+	background: white;
+	border-top: 1px darkgray solid;
+	box-shadow:0 3px 3px  #A9A9A9;
+}
+.Hide{
+	min-width: 930px;
+	padding: 0 auto;
+	justify-content: space-around;
+	background: white;
+	text-align: center;
+}
+.Hide a{
+	display: inline-block;
+	width: 150px;
+	padding-top: 40px;
+}
+.Hide li:hover{
+	color: red;
+}
+.Hide .iconfont{
+	font-weight: 600;
+	font-size: 30px;
+}
+.Hide span{
+	padding-top: 20px;
+	display: block;
+	font-size: 12px;
+}
+.Yonghucontent{
+	position: absolute;
+	right: 100px;
+	top: 60px;
+	width: 320px;
+	height: 280px;
+	background: #FFFFFF;
+	border-top: 1px #A9A9A9 solid;
+	box-shadow:0 3px 3px  #A9A9A9;
+	display: none;
+}
+.Yonghucontent .Content{
+	padding:15px 20px 0;
+}
+.Yonghulist li{
+	border-bottom: 1px darkgrey solid;
+}
+.Yonghulist{
+	line-height: 50px;
+	font-size: 14px;
+	color: #008B8B;
+}
+.Yonghulist:hover li{
+	color: #404040;
+}
+.Denglu{
+	line-height: 100px;
+	font-size: 14px;
+	color: cornflowerblue;
+	cursor: pointer;
+}
+.Denglu:hover{
+	text-decoration: underline;
+}
+.Shopcar{
+	border-top: 1px #A9A9A9 solid;
+	box-shadow:0 3px 3px  #A9A9A9;
+	position: absolute;
+	right: 20px;
+	top: 60px;
+	width:370px ;
+	min-height: 150px;
+	background: white;
+	display: none;
+}
+.Shopcarshop{
+	padding: 20px 10px 0;
+}
+.Shopcarshop span{
+	display: block;
+	text-align: center;
+	line-height: 100px;
+	color: #A9A9A9;
+}
+.Shopcarmoney{
+	padding: 20px;
+	text-align: center;
+	height: 40px;
+	border-top: 1px #A9A9A9 solid;
+}
+.Shopcarmoney a{
+	font-size: 14px;
+	height: 40px;
+	display: block;
+	width: 330px;
+	background: red;
+	color: white;
+}
+.Shopcarmoney i{
+	position: absolute;
+	left: 165px;
+	top: 141px;
+	line-height: 40px;
+	font-style: normal;
+	z-index: 1;
+}
+.Shopcarmoney span{
+	width: 0px;
+	height: 40px;
+	position: absolute;
+	left: 20px;
+	top: 141px;
+	opacity: 0.15;
+	background: #000000;
+	z-index: 0;
+}
+/* footer */
+/* OneFoot */
+.OneFoot{
+	width: 100%;
+	height: 255px;
+	padding: 36px 0 20px;
+	overflow: hidden;
+	background: #f6f6f6;
+}
+.OneFoot08{
+	display:inline-block;
+	width: 80%;
+}
+.OneFoot08025 p{
+	line-height: 50px;
+	font-size: 15px;
+	font-weight: 600;
+}
+.OneFoot08025 ul li a{
+	display: block;
+	padding: 8px 0;
+	line-height: 23px;
+	font-size: 13px;
+	color: #A9A9A9;
+}
+.OneFoot08025 a:hover{
+	color: #000000;
+}
+.OneFoot08025{
+	display: inline-block;
+	width: 25%;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+.OneFoot02{
+	width: 20%;
+	display: inline-block;
+	text-align: center;
+	float: right;
+	height: 245px;
+	padding-top: 10px;
+}
+.OneFoot02 :first-child{
+	color: #000000;
+	line-height: 33px;
+	font-size: 20px;
+}
+.OneFoot02 .Aback.Black{
+	display: block;
+	line-height:40px ;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 15px 0;
+	background: url(../img/Cback.png) no-repeat;
+	background-position-x: -262px;
+	border:1px #000000 solid;
+	color: black;
+}
+.OneFoot02 .Aback.Black:hover{
+	color: white;
+}
+.OneFoot02Up{
+	padding-top: 10px;
+	line-height: 40px;
+}
+.OneFoot02Up .iconfont{
+	font-size: 30px;
+}
+/* TwoFoot */
+.TwoFoot{
+	padding: 30px 20px 20px;
+	height: 70px;
+	border-bottom: 1px #A9A9A9 solid;
+	background: #f6f6f6;
+}
+.TwoFoot .TwoFoot1{
+	line-height: 50px;
+	display: inline-block;
+	width:50%;
+	color: black;
+}
+.TwoFoot .TwoFoot1 span{
+	margin-left:10px;
+	margin-right:20px ;
+	display: inline-block;
+	width: 18px;
+	height: 12px;
+	background: url(../img/guoqi.png) no-repeat;
+	background-size:144px 84px ;
+	background-position: -18px -32px;
+}
+.TwoFoot ul{
+	display: inline-block;
+	width: 50%;
+	line-height: 50px;
+}
+.TwoFoot li{
+	float:left;
+	font-size: 12px;
+	padding: 0 20px;
+	line-height: 12px;
+	border-right: 1px #969896 solid;
+}
+.TwoFoot li a{
+	color: #000000;
+}
+.TwoFoot ul :last-child{
+	border-right: none;
+}
+/* ThreeFoot */
+.ThreeFoot{
+	padding: 30px 0 30px 20px;
+	height: 90px;
+	background: #f6f6f6;
+}
+.ThreeFoot1 p{
+	font-size: 12px;
+	color: #969896;
+	line-height: 30px;
+}
+.ThreeFoot1{
+	display: inline-block;
+	width: 70%;
+}
+.ThreeFoot1 a{
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	color: #000000;
+}
+.ThreeFoot2{
+	float: right;
+}
+.ThreeFoot2 img{
+	width: 83px;
+	height: 30px;
+	padding: 0 10px;
+}

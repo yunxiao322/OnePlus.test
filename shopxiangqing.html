@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="shop/shopxinxi.css">
+	</head>
+	<body>
+		<article>
+			<div class="HHide">
+			</div>
+		</article>
+	</body>
+</html>
+<script src="JQuery.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(function(){
+		$("section div").click(function(){
+			$("article").css({
+				display:"block"
+			})
+			$("nav,section").css({
+				display:"none"
+			})
+			let Index=$(this).index();
+			$.ajax({
+				url:"shop/shouji.json",
+				dataType:'json',//服务器返回json格式数据
+				type:'post',//HTTP请求类型
+				timeout:10000,//超时时间设置为10秒；
+				success:function(data){
+					$.each(data,function(i,item){
+				
+						if(i==Index){
+							let Id=item.id;
+							if(typeof.Id=="object"){
+								let i=0;
+								let Name=item.name;
+								let Money=item.money;
+								$("article").append(
+								"<div class='Xiangqing'><h1>"+Name+"</h1><div class='shoujitype'><i>颜色/机型</i></div></div><p>&yen;"+Money+"</p><a class='Fback'><span class='fback'></span><i>加入购物车</i></a>"
+								)
+								$("article .HHide").append(
+								"<div class='TUpian'></div>"
+								)
+								$.each(Id,function(i,item){
+									let Liimg1=item.liimg1;
+									let Liimg2=item.liimg2;
+									let Liimg3=item.liimg3;
+									let Liimg4=item.liimg4;
+									let Color=item.color;
+									$("article .HHide .TUpian").eq(i).append(
+									"<ol><li><img src="+Liimg1+"></li><li><img src="+Liimg2+"></li><li><img src="+Liimg3+"></li><li><img src="+Liimg4+"></li></ol><ul><li><img src="+Liimg1+"></li><li><img src="+Liimg2+"></li><li><img src="+Liimg3+"></li><li><img src="+Liimg4+"></li></ul>
+									)
+									$("article .Xiangqing .shoujitype").append(
+									"<span>"+Color+"</span>"
+									)
+								}
+							}else{
+								
+							}
+						}
+					})
+				},
+				error:function(xhr,type,errorThrown){
+					
+				}
+			});
+		});
+	});
+	$(function() {
+		$(".Fback").mouseover(function() {
+			$(".fback").stop().animate({
+				width: "100%",
+			}, 200)
+		});
+		$(".Fback").mouseout(function() {
+			$(".fback").stop().animate({
+				width: "0px",
+			}, 200)
+		});
+	});
+</script>

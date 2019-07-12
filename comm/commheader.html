@@ -1,0 +1,121 @@
+			<ul class="Nav Logo">
+				<a href="homepage.html">
+					<li class="iconfont icon-yijia"></li>
+				</a>
+			</ul>
+			<ul class="Nav Font">
+				<a href="" class="Underline">
+					<li>OnePlus 7 Pro</li>
+				</a>
+				<a href="" class="Underline">
+					<li>OnePlus 7</li>
+				</a>
+				<a href="" class="Underline Shop" id="Shop">
+					<li>商城</li>
+				</a>
+				<a href="" class="Underline">
+					<li>品牌</li>
+				</a>
+				<a href="" class="Underline">
+					<li>服务</li>
+				</a>
+				<a href="" class="Underline">
+					<li>论坛</li>
+				</a>
+				<a href="" class="Underline">
+					<li>零售店</li>
+				</a>
+			</ul>
+			<ul class="Nav Icon">
+				<a href="Userlogin.html" class="Underline" id="Yonghu">
+					<li class="iconfont icon-yonghu"></li>
+				</a>
+				<a href="Shopcar.html" class="Underline" id="Shopcar">
+					<li class="iconfont icon-gouwuchekong"></li>
+				</a>
+				<a href="">
+					<li class="iconfont icon-sousuo"></li>
+				</a>
+			</ul>
+			<div class="HideBox" >
+				<ul class="Hide">
+					<a href="" class="FirHide">
+						<li class="iconfont icon-shouji"><span>手机</span></li>
+					</a>
+					<a href="">
+						<li class="iconfont icon-sousuo"><span>耳机</span></li>
+					</a>
+					<a href="">
+						<li class="iconfont icon-shoujike"><span>壳/膜</span></li>
+					</a>
+					<a href="">
+						<li class="iconfont icon-shuma-shujuxian"><span>适配器/数据线</span></li>
+					</a>
+					<a href="">
+						<li class="iconfont icon-shujuxian"><span>套装</span></li>
+					</a>
+					<a href="" class="LastHide">
+						<li class="iconfont icon-beibao"><span>生活馆</span></li>
+					</a>
+				</ul>
+			</div>
+			<div class="Yonghucontent">
+				<ul class="Content">
+					<a href="" class="Yonghulist">
+						<li>订单</li>
+					</a>
+					<a href="" class="Yonghulist">
+						<li>账户</li>
+					</a>
+					<a href="" class="Yonghulist">
+						<li>推荐有礼</li>
+					</a>
+					<a href="" class="Denglu">
+						<li>登录</li>
+					</a>
+				</ul>
+			</div>
+			<div class="Shopcar">
+				<div class="Shopcarshop">
+					<span>您的购物车里没有商品!</span>
+				</div>
+				<div class="Shopcarmoney">
+					<a href="" class="Bback"><span class="bback"></span><i>去购物</i></a>
+				</div>
+			</div>
+			<script type="text/javascript">
+				$(function() {
+						$(".Bback").mouseover(function() {
+							$(".bback").stop().animate({
+								width: "330px",
+							}, 200)
+						})
+						$(".Bback").mouseout(function() {
+							$(".bback").stop().animate({
+								width: "0px",
+							}, 200)
+						})
+					})
+				
+					function Fun(a, b) {
+						let shop = document.getElementById(a);
+						let Hidebox = document.getElementsByClassName(b)[0];
+						shop.onmouseover = function() {
+							Hidebox.style.display = "block";
+							Hidebox.style.zIndex = "9999";
+						}
+						Hidebox.onmouseover = function() {
+							Hidebox.style.display = "block";
+							Hidebox.style.zIndex = "9999";
+						}
+						Hidebox.onmouseout = function() {
+							Hidebox.style.display = "none";
+						}
+						shop.onmouseout = function() {
+							Hidebox.style.display = "none";
+						}
+					}
+					Fun("Shop", "HideBox");
+					Fun("Yonghu", "Yonghucontent");
+					Fun("Shopcar", "Shopcar");
+			</script>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>登录</title>
+		<link rel="stylesheet" href="comm/commonality.css">
+		<link rel="stylesheet" href="UserLogin/Userlogin.css">
+	</head>
+	<body>
+		<header>
+			<ul class="Nav Logo">
+				<a href="homepage.html">
+					<li class="iconfont icon-yijia"></li>
+				</a>
+			</ul>
+			<ul class="Nav Font">
+				<a href="" class="Underline">
+					<li>OnePlus 7 Pro</li>
+				</a>
+				<a href="" class="Underline">
+					<li>OnePlus 7</li>
+				</a>
+				<a href="shop.html
+				" class="Underline Shop" id="Shop">
+					<li>商城</li>
+				</a>
+				<a href="" class="Underline">
+					<li>品牌</li>
+				</a>
+				<a href="" class="Underline">
+					<li>服务</li>
+				</a>
+				<a href="" class="Underline">
+					<li>论坛</li>
+				</a>
+				<a href="" class="Underline">
+					<li>零售店</li>
+				</a>
+			</ul>
+			<ul class="Nav Icon">
+				<a href="Userlogin.html" class="Underline" id="Yonghu">
+					<li class="iconfont icon-yonghu"></li>
+				</a>
+				<a href="Shopcar.html" class="Underline" id="Shopcar">
+					<li class="iconfont icon-gouwuchekong"></li>
+				</a>
+				<a href="">
+					<li class="iconfont icon-sousuo"></li>
+				</a>
+			</ul>
+			<div class="HideBox" >
+				<ul class="Hide">
+					<a href="" class="FirHide">
+						<li class="iconfont icon-shouji"><span>手机</span></li>
+					</a>
+					<a href="">
+						<li class="iconfont icon-sousuo"><span>耳机</span></li>
+					</a>
+					<a href="">
+						<li class="iconfont icon-shoujike"><span>壳/膜</span></li>
+					</a>
+					<a href="">
+						<li class="iconfont icon-shuma-shujuxian"><span>适配器/数据线</span></li>
+					</a>
+					<a href="">
+						<li class="iconfont icon-shujuxian"><span>套装</span></li>
+					</a>
+					<a href="" class="LastHide">
+						<li class="iconfont icon-beibao"><span>生活馆</span></li>
+					</a>
+				</ul>
+			</div>
+			<div class="Yonghucontent">
+				<ul class="Content">
+					<a href="" class="Yonghulist">
+						<li>订单</li>
+					</a>
+					<a href="" class="Yonghulist">
+						<li>账户</li>
+					</a>
+					<a href="" class="Yonghulist">
+						<li>推荐有礼</li>
+					</a>
+					<a class="Denglu">
+						<li>登录</li>
+					</a>
+				</ul>
+			</div>
+			<div class="Shopcar">
+				<div class="Shopcarshop">
+					<span>您的购物车里没有商品!</span>
+				</div>
+				<div class="Shopcarmoney">
+					<a href="" class="Bback"><span class="bback"></span><i>去购物</i></a>
+				</div>
+			</div>
+		</header>
+		<section>
+			<div class="Userlogin">
+				<p>登录</p>
+				<div class="Tel">
+					<span class="TelHeader">+86</span><input class="TelNum" type="text" placeholder="手机号" />
+				</div>
+				<span class="Telyanzheng one">用户不存在请注册</span>
+				<span class="Telyanzheng two">请输入您的登录账号</span>
+				<input class="Paw" type="password" placeholder="密码" />
+				<span class="Pawyanzheng Pawone">密码错误</span>
+				<span class="Pawyanzheng Pawtwo">请输入您的密码</span>
+				<button class="Creation Eback"><span class="eback"></span><i>登录</i></button>
+				<a href="UserRegistration.html">注册</a>
+			</div>
+			<div class="Susses">
+				<p>欢迎您<p>
+				<span></span>
+			</div>
+		</section>
+		<footer>
+			
+		</footer>
+	</body>
+</html>
+<script src="JQuery.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(function() {
+			$(".Bback").mouseover(function() {
+				$(".bback").stop().animate({
+					width: "330px",
+				}, 200)
+			})
+			$(".Bback").mouseout(function() {
+				$(".bback").stop().animate({
+					width: "0px",
+				}, 200)
+			})
+		})
+	
+		function Fun(a, b) {
+			let shop = document.getElementById(a);
+			let Hidebox = document.getElementsByClassName(b)[0];
+			shop.onmouseover = function() {
+				Hidebox.style.display = "block";
+				Hidebox.style.zIndex = "9999";
+			}
+			Hidebox.onmouseover = function() {
+				Hidebox.style.display = "block";
+				Hidebox.style.zIndex = "9999";
+			}
+			Hidebox.onmouseout = function() {
+				Hidebox.style.display = "none";
+			}
+			shop.onmouseout = function() {
+				Hidebox.style.display = "none";
+			}
+		}
+		Fun("Shop", "HideBox");
+		Fun("Yonghu", "Yonghucontent");
+		Fun("Shopcar", "Shopcar");
+	$(function(){
+		$("footer").load("comm/commfooter.html")
+	});
+	$(function() {
+		$(".Eback").mouseover(function() {
+			$(".eback").stop().animate({
+				width: "310px",
+			}, 200)
+		});
+		$(".Eback").mouseout(function() {
+			$(".eback").stop().animate({
+				width: "0px",
+			}, 200)
+		});
+	});
+	$(function() {
+		$(".TelNum").focus(function() {
+			$(".Tel").css({
+				border: "1px gray solid"
+			});
+		});
+		$(".TelNum").blur(function() {
+			if ($(".TelNum").val() !== "") {
+				$.ajax({
+					url: "Userlogin/Userzhanghu.php",
+					type: "get",
+					data: {
+						"iD": $(".TelNum").val(),
+					},
+					success: function(str) {
+						if (str == 1) {
+							$(".one").css({
+								display: "none"
+							})
+						} else {
+							$(".one").css({
+								display: "block"
+							})
+						}
+					}
+				})
+			}
+		});
+		$(".Paw").focus(function() {
+			$(".Paw").css({
+				border: "1px gray solid"
+			});
+			if (($(".TelNum").val()) == "") {
+				$(".two").css({
+					display: "block"
+				})
+				$(".Tel").css({
+					border: "1px red solid"
+				});
+			} else {
+				$(".two").css({
+					display: "none"
+				})
+				$(".Tel").css({
+					border: "1px #CCCCCC solid"
+				});
+			}
+		});
+		$(".Paw").blur(function() {
+			$(this).css({
+				border: "1px #CCCCCC solid"
+			});
+		});
+		//登录 ajax验证
+		$(function() {
+			$(".Creation").click(function() {
+				if ($(".Paw").val()!=="") {
+					$.ajax({
+						url: "Userlogin/Userlogin.php",
+						type: "get",
+						data: {
+							"iD": $(".TelNum").val(),
+							"pAW": $(".Paw").val()
+						},
+						success: function(str) {
+							if (str == 1) {
+								$(".Paw").val("")
+								$(".Susses span").text("a"+$(".TelNum").val())
+								$(".Yonghucontent .Denglu li").text("退出登录")
+								let date = new Date();
+								date.setDate(date.getDate()+7);
+								document.cookie='name=a'+$(".TelNum").val()+';expires='+date;
+								$(".Pawone").css({
+									display: "none",
+								})
+								$(".Susses").css({
+									display:"block"
+								})
+								$(".Userlogin").css({
+									display:"none"
+								})
+							} else {
+								$(".Pawone").css({
+									display: "block"
+								})
+								$(".Paw").css({
+									border: "1px red solid"
+								});
+							}
+						}
+					})
+				}else{
+					$(".Pawtwo").css({
+						display: "block"
+					})
+					$(".Paw").css({
+						border: "1px red solid"
+					});
+				}
+			});
+		});
+		let cook=document.cookie;
+		if(cook=="name="||cook==""){
+			cook=document.cookie;
+			$(".Susses").css({
+				display:"none"
+			})
+			$(".Userlogin").css({
+				display:"block"
+			})
+			$(".Yonghucontent .Denglu li").text("登录")
+		}else{
+			let aaa=cook.split("name=")
+			$(".Susses span").text(aaa[1])
+			$(".Susses").css({
+				display:"block"
+			})
+			$(".Userlogin").css({
+				display:"none"
+			})
+			$(".Yonghucontent .Denglu li").text("退出登录")
+		}	
+		$(".Yonghucontent .Denglu li").click(function(){
+			let cook=document.cookie;
+			document.cookie='name=;expires=-1';
+			
+		if(cook=="name="){
+					$(".Susses").css({
+						display:"none"
+					})
+					$(".Userlogin").css({
+						display:"block"
+					})
+					$(".Yonghucontent .Denglu li").text("登录")
+		}else{
+			$(".Yonghucontent .Denglu li").text("退出登录")
+			$(".Susses").css({
+				display:"block"
+			})
+			$(".Userlogin").css({
+				display:"none"
+			})
+		}	
+			
+		})
+	});
+	
+</script>
